@@ -1,6 +1,9 @@
-travis-python3.4-PySide-wheel
-==================================
-[![Build Status](https://travis-ci.org/parkin/travis-python3.4-PySide-wheel.svg?branch=master)](https://travis-ci.org/parkin/travis-python3.4-PySide-wheel)
+#python-wheelhouse#
+[![Build Status](https://travis-ci.org/parkin/python-wheelhouse.svg?branch=master)](https://travis-ci.org/parkin/python-wheelhouse)
+
+Small collection of Python [wheels](http://wheel.readthedocs.org/en/latest/). See the collection [here](https://parkin.github.io/python-wheelhouse/).
+
+##PySide##
 
 Built a PySide [wheel](http://wheel.readthedocs.org/en/latest/) so Travis-CI builds using Python3.4 do not have to build PySide from source.
 
@@ -16,10 +19,9 @@ Note on my machine with Ubuntu 14.04, this created the file `dist/PySide-1.2.2-c
 
 Note that as of yet, only `import PySide` has been tested. Due to this being built under Ubuntu 14.04 and Travis-Ci servers running Ubuntu 12.04, I do not know how functional the PySide library is. If you run into problems, you may want to redo this on a machine running Ubuntu 12.04.
 
-Usage
-=====
+##Usage##
 In your .travis.yml file, include the following:
 
     install:
       - sudo apt-get install libqt4-dev
-      - pip install --find-links https://parkin.github.io/travis-python3.4-PySide-wheel/ --use-wheel PySide;
+      - pip install --find-links https://parkin.github.io/python-wheelhouse/ --use-wheel PySide;
