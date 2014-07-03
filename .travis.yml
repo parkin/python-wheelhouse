@@ -4,7 +4,7 @@ matrix:
   include:
     - python: "3.4"
 install: 
-  - sudo apt-get install build-essential cmake libqt4-dev libphonon-dev libxml2-dev libxslt1-dev qtmobility-dev
+  - sudo apt-get install libqt4-dev
   - pip install --find-links http://parkin.github.io/test-travis-python-3.4-system-site/ --use-wheel --use-mirrors PySide;
 
 script:
