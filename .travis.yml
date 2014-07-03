@@ -1,12 +1,11 @@
 language: python
-python:
-  - "3.2"
-  - "3.2_with_system_site_packages"
-  - "3.3"
-  - "3.3_with_system_site_packages"
-  - "3.4"
-  - "3.4_with_system_site_packages"
-install: "sudo apt-get install python3-pyside"
+
+matrix:
+  include:
+    - python: "3.4"
+install: 
+  - sudo apt-get install build-essential cmake libqt4-dev libphonon-dev libxml2-dev libxslt1-dev qtmobility-dev
+  - pip install --find-links http://wheels.astropy.org/ --use-wheel --use-mirrors PySide;
 
 script:
   - python test.py
