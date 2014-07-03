@@ -5,7 +5,7 @@ matrix:
     - python: "3.4"
 install: 
   - sudo apt-get install libqt4-dev
-  - pip install --find-links https://parkin.github.io/test-travis-python-3.4-system-site/ --use-wheel PySide;
+  - pip install --find-links https://parkin.github.io/travis-python3.4-PySide-wheel/ --use-wheel PySide;
 
 script:
   - python test.py
