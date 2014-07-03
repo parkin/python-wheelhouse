@@ -1,5 +1,6 @@
 travis-python3.4-PySide-wheel
 ==================================
+[![Build Status](https://travis-ci.org/parkin/travis-python3.4-PySide-wheel.svg?branch=master)](https://travis-ci.org/parkin/travis-python3.4-PySide-wheel)
 
 Built a PySide [wheel](http://wheel.readthedocs.org/en/latest/) so Travis-CI builds using Python3.4 do not have to build PySide from source.
 
