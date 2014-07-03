@@ -1,4 +1,4 @@
 language: python
 python:
   - "3.4"
-install: "travis-retry sudo apt-get install python3-pyside"
+install: "sudo apt-get install python3-pyside"
