@@ -1,2 +1,2 @@
 import PySide
-print "Done!"
+print('Done')
