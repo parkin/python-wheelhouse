@@ -7,6 +7,8 @@ matrix:
 install: 
   - sudo apt-get install libqt4-dev
   - pip install --find-links https://parkin.github.io/python-wheelhouse/ --use-wheel PySide;
+  # Finish the PySide install, since we are in a virtualenv
+  - python ~/virtualenv/python${TRAVIS_PYTHON_VERSION}/bin/pyside_postinstall.py -install
 
 script:
   - python test.py
