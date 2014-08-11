@@ -20,7 +20,7 @@ Following these [instructions](http://pyside.readthedocs.org/en/latest/building/
     $ cd pyside-setup
     $ python3.4 setup.py bdist_wheel --qmake=/usr/bin/qmake-qt4 --version=1.2.2
     
-The wheel is hosted at https://github.com/parkin/travis-python3.4-PySide-wheel.
+The wheel is hosted at http://parkin.github.io/python-wheelhouse.
 
 ##Usage##
 In your .travis.yml file, include the following:
