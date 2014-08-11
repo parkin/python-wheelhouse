@@ -6,6 +6,7 @@ Small collection of Python [wheels](http://wheel.readthedocs.org/en/latest/). Se
 #Built on Ubuntu 12.04#
 
 PySide (python 2.7)
+PySide (python 3.4)
 
 tables (python 2.7)
 
@@ -30,16 +31,3 @@ In your .travis.yml file, include the following:
       # Travis CI servers use virtualenvs, so we need to finish the install by the following
       - python ~/virtualenv/python${TRAVIS_PYTHON_VERSION}/bin/pyside_postinstall.py -install
 
-#Built on Ubuntu 14.04#
-PySide (python 3.4)
-
-Note on my machine with Ubuntu 14.04, this created the file `dist/PySide-1.2.2-cp34-cp34m-linux_x86_64.whl` which was roughly 17 MB. When I instead included the `--standalone` tag in the build step, the file was ~77 MB.
-
-Note that on the Travis CI servers,
-
-The following python script
-
-    import PySide
-    from PySide import QtGui
-
-fails when the PySide wheel was built on Ubuntu 14.04.
